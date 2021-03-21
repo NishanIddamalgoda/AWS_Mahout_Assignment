@@ -26,7 +26,7 @@ for i in p:
 def recs(request, id):
   # Get recommendations for this user
   v = r.get(id)
-  return 'The recommendations for user '+id+' are '+v
+  return 'The recommendations for user ' + str(id) + ' are '+v
 
 
 # Make a default endpoint
@@ -35,5 +35,5 @@ def recs(request, id):
 def home(request):
   return 'Please add a user id to the URL, e.g. http://localhost:8080/1234n'
 
-# Start up a listener on port 8080
-run("localhost", 8080)
+# Start up a listener on port 8090
+run("localhost", 8090)
