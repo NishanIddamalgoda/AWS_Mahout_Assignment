@@ -26,7 +26,7 @@ for i in p:
 def recs(request, id):
   # Get recommendations for this user
   v = r.get(id)
-  return 'The recommendations for user ' + str(id) + ' are '+v
+  return 'The recommendations for user '+str(id)+' are '+v.decode("utf-8")
 
 
 # Make a default endpoint
